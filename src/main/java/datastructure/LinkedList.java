@@ -171,20 +171,20 @@ public class LinkedList {
 		}
 		System.out.println();
 	}
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
 		LinkedList myList=new LinkedList();
 		System.out.println("Insertion at end : ");
-		myList=insertAtEnd(myList,7);
-		myList=insertAtEnd(myList,4);
-		myList=insertAtEnd(myList,1);
-		myList=insertAtEnd(myList,6);
-		myList=insertAtEnd(myList,10);
+		myList=insertAtEnd(myList,"Naveen");
+		myList=insertAtEnd(myList,"Navin");
+		myList=insertAtEnd(myList,"Naveen Kumar");
+		myList=insertAtEnd(myList,"Naveen Kumar A");
+		myList=insertAtEnd(myList,"Naveee");
 		display(myList);
 		System.out.println("Insertion at begin : ");
-		myList=insertAtBegin(myList,5);
+		myList=insertAtBegin(myList,"annadurai");
 		display(myList);
 		System.out.println("Insertion at middle : ");
-		myList=insertAtMiddle(myList,8,2);
+		myList=insertAtMiddle(myList,"Annadurai",2);
 		display(myList);
 		System.out.println("Deletion At End : ");
 		myList=deleteAtEnd(myList);
@@ -198,8 +198,8 @@ public class LinkedList {
 		myList=deleteAtMiddle(myList,2);
 		display(myList);
 		System.out.println("Search : ");
-		search(myList,7);
-		search(myList,81);
-	}*/
+		search(myList,"naveen");
+		search(myList,"Naveen");
+	}
 
 }
