@@ -179,31 +179,31 @@ public class LinkedList {
 	}
 	public static void main(String[] args) {
 		LinkedList myList=new LinkedList();
-		System.out.println("Insertion at end : ");
+		logger.log(Level.INFO,"Insertion at end : ");
 		myList=insertAtEnd(myList,"Naveen");
 		myList=insertAtEnd(myList,"Navin");
 		myList=insertAtEnd(myList,"Naveen Kumar");
 		myList=insertAtEnd(myList,"Naveen Kumar A");
 		myList=insertAtEnd(myList,"Naveee");
 		display(myList);
-		System.out.println("Insertion at begin : ");
+		logger.log(Level.INFO,"Insertion at begin : ");
 		myList=insertAtBegin(myList,"annadurai");
 		display(myList);
-		System.out.println("Insertion at middle : ");
+		logger.log(Level.INFO,"Insertion at middle : ");
 		myList=insertAtMiddle(myList,"Annadurai",2);
 		display(myList);
-		System.out.println("Deletion At End : ");
+		logger.log(Level.INFO,"Deletion At End : ");
 		myList=deleteAtEnd(myList);
 		myList=deleteAtEnd(myList);
 		display(myList);
-		System.out.println("Deletion At begin : ");
+		logger.log(Level.INFO,"Deletion At begin : ");
 		myList=deleteAtBegin(myList);
 		myList=deleteAtBegin(myList);
 		display(myList);
-		System.out.println("Deletion At Middle : ");
+		logger.log(Level.INFO,"Deletion At Middle : ");
 		myList=deleteAtMiddle(myList,2);
 		display(myList);
-		System.out.println("Search : ");
+		logger.log(Level.INFO,"Search : ");
 		search(myList,"naveen");
 		search(myList,"Naveen");
 	}
