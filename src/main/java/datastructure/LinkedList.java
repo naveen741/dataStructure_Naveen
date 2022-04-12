@@ -175,7 +175,7 @@ public class LinkedList {
 				str.append(current.data);
 			current = current.next;
 		}
-		logger.log(Level.INFO,str.toString());
+		logger.log(Level.INFO,"{0}",str.toString());
 	}
 	public static void main(String[] args) {
 		LinkedList myList=new LinkedList();
