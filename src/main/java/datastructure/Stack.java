@@ -25,7 +25,7 @@ public class Stack {
 	 * pop is method to delete last element in Stack
 	 */
 	void pop(){
-		if(list.size()>0)
+		if(!list.isEmpty())
 			list.remove(list.size()-1);
 		else
 			System.out.println("Can't pop Stack is underFlow.");
@@ -49,7 +49,7 @@ public class Stack {
 	 * isEmpty checks the stack is empty or not
 	 */
 	void isEmpty() {
-		if(list.size()==0) {
+		if(list.isEmpty()) {
 			System.out.println("Stack is emptied.");
 		}
 		else {
