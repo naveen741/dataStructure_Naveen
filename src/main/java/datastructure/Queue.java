@@ -60,7 +60,7 @@ public class Queue {
 	 * isEmpty method @return queue is empty or not
 	 */
 	boolean isEmpty() {
-		return myQueue.size()==0;
+		return myQueue.isEmpty();
 	}
 	public static void main(String[] args) {
 		Queue q1=new Queue(15);
