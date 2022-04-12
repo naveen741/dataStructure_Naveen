@@ -60,7 +60,8 @@ public class Queue {
 			else
 				str.append(myQueue.get(i)+"-");
 		}
-		logger.log(Level.INFO,"{0}",str.toString());
+		String temp=str.toString();
+		logger.log(Level.INFO,"{0}",temp);
 	}
 	/**
 	 * 
