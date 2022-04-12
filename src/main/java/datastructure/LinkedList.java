@@ -145,7 +145,7 @@ public class LinkedList {
 		Node current = myList.head;
 		boolean flag=true;
 		while(current != null) {
-			if(current.data==key) {
+			if(current.data.equals(key)) {
 				System.out.println(key+" Founded");
 				flag=false;
 				break;
