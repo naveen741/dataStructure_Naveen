@@ -83,7 +83,7 @@ public class LinkedList {
 	 */
 	public static LinkedList deleteAtBegin(LinkedList myList) {
 		if(myList.head ==null){
-			System.out.println("ListEmpty");
+			System.out.println(" Cant delete at begin List is Empty");
 		}
 		else {
 			myList.head=myList.head.next;
@@ -99,7 +99,7 @@ public class LinkedList {
 	public static LinkedList deleteAtMiddle(LinkedList myList,int position) {
 		int index=0;
 		if(myList.head ==null){
-			System.out.println("ListEmpty");
+			System.out.println(" Cant delete at Middle List is Empty");
 		}
 		else {
 			Node temp=myList.head;
@@ -122,7 +122,7 @@ public class LinkedList {
 	 */
 	public static LinkedList deleteAtEnd(LinkedList myList) {
 		if(myList.head ==null){
-			System.out.println("ListEmpty");
+			System.out.println(" Cant delete at End List is Empty");
 		}
 		else {
 			Node temp=myList.head;
