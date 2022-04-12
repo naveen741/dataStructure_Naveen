@@ -1,4 +1,8 @@
 package datastructure;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 class Node{
 	String data;
 	Node next;
@@ -8,6 +12,7 @@ class Node{
 }
 public class LinkedList {
 	Node head;
+	static Logger logger=Logger.getLogger(LinkedList.class.getName());
 	/**
 	 * insertAtEnd is method to insert element at end
 	 * @param myList is the Linked List
@@ -83,7 +88,7 @@ public class LinkedList {
 	 */
 	public static LinkedList deleteAtBegin(LinkedList myList) {
 		if(myList.head ==null){
-			System.out.println(" Cant delete at begin List is Empty");
+			logger.log(Level.WARNING, "Cant delete at begin List is Empty");
 		}
 		else {
 			myList.head=myList.head.next;
@@ -99,7 +104,7 @@ public class LinkedList {
 	public static LinkedList deleteAtMiddle(LinkedList myList,int position) {
 		int index=0;
 		if(myList.head ==null){
-			System.out.println(" Cant delete at Middle List is Empty");
+			logger.log(Level.WARNING, "Cant delete at Middle List is Empty");
 		}
 		else {
 			Node temp=myList.head;
@@ -122,7 +127,7 @@ public class LinkedList {
 	 */
 	public static LinkedList deleteAtEnd(LinkedList myList) {
 		if(myList.head ==null){
-			System.out.println(" Cant delete at End List is Empty");
+			logger.log(Level.WARNING, "Cant delete at End List is Empty");
 		}
 		else {
 			Node temp=myList.head;
@@ -146,14 +151,14 @@ public class LinkedList {
 		boolean flag=true;
 		while(current != null) {
 			if(current.data.equals(key)) {
-				System.out.println(key+" Founded");
+				logger.log(Level.INFO,"{0} Founded",key);
 				flag=false;
 				break;
 			}
 			current = current.next;
 		}
 		if(flag)
-			System.out.println(key+" Not Founded");
+			logger.log(Level.INFO,"{0} Not Founded",key);
 		
 	}
 	/**
@@ -162,14 +167,15 @@ public class LinkedList {
 	 */
 	public static void display(LinkedList myList) {
 		Node current = myList.head;
+		StringBuilder str=new StringBuilder();
 		while(current != null) {
 			if(current.next!=null)
-				System.out.print(current.data+" -> ");
+				str.append(current.data+" -> ");
 			else
-				System.out.print(current.data);
+				str.append(current.data);
 			current = current.next;
 		}
-		System.out.println();
+		logger.log(Level.INFO,str.toString());
 	}
 	public static void main(String[] args) {
 		LinkedList myList=new LinkedList();
