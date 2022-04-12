@@ -21,7 +21,7 @@ public class Queue {
 		if(myQueue.size()<size)
 			myQueue.add(data);
 		else
-			logger.log(Level.WARNING,"Can't enqueue, Queue is overflow");
+			logger.log(Level.WARNING,"Can'\t enqueue, Queue is overflow");
 	}
 	/*
 	 * deQueue is a method to delete an element in queue 
@@ -31,7 +31,7 @@ public class Queue {
 		if(!isEmpty())
 			myQueue.remove(0);
 		else
-			logger.log(Level.WARNING,"Can't dequeue, Queue is underflow");
+			logger.log(Level.WARNING,"Can'\t dequeue, Queue is underflow");
 	}
 	/**
 	 * 
@@ -60,7 +60,7 @@ public class Queue {
 			else
 				str.append(myQueue.get(i)+"-");
 		}
-		logger.log(Level.INFO,str.toString());
+		logger.log(Level.INFO,"{0}",str.toString());
 	}
 	/**
 	 * 
