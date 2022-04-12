@@ -31,7 +31,7 @@ public class Stack {
 		if(!list.isEmpty())
 			list.remove(list.size()-1);
 		else
-			logger.log(Level.INFO,"Can't pop Stack is underFlow.");
+			logger.log(Level.INFO,"Cant pop Stack is underFlow.");
 	}
 	/**
 	 * peek is method returns the top value of Stack 
